@@ -64,7 +64,7 @@ Generates an image with all the annotation shapes (bbox or polygon) overlayed.
 
 #### Options:
 ```
-usage: to-annotation-overlay-od [-b BACKGROUND_COLOR] [-c COLOR] [-o OUTPUT_FILE]
+usage: to-annotation-overlay-od [-b BACKGROUND_COLOR] [-c COLOR] [-o OUTPUT_FILE] [-s SCALE_TO]
 
 optional arguments:
   -b BACKGROUND_COLOR, --background-color BACKGROUND_COLOR
@@ -73,4 +73,6 @@ optional arguments:
                         the color to use for drawing the shapes as RGBA byte-quadruplet, e.g.: 255,0,0,64
   -o OUTPUT_FILE, --output OUTPUT_FILE
                         the PNG image to write the generated overlay to
+  -s SCALE_TO, --scale-to SCALE_TO
+                        the dimensions to scale all images to before overlaying them (format: width,height)
 ```
