@@ -45,6 +45,7 @@ setup(
             "label-dist-ic=wai.annotations.imgstats.format.labeldist.specifier:LabelDistributionICOutputFormatSpecifier",
             "label-dist-is=wai.annotations.imgstats.format.labeldist.specifier:LabelDistributionISOutputFormatSpecifier",
             "label-dist-od=wai.annotations.imgstats.format.labeldist.specifier:LabelDistributionODOutputFormatSpecifier",
+            "to-annotation-overlay-od=wai.annotations.imgstats.format.annotation_overlay.specifier:AnnotationOverlayODOutputFormatSpecifier",
         ]
     }
 )
