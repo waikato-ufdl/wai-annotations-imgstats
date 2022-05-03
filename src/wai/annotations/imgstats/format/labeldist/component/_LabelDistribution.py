@@ -2,6 +2,7 @@ import csv
 import json
 import sys
 from collections import OrderedDict
+import numpy as np
 
 from wai.annotations.core.component import SinkComponent
 from wai.annotations.domain.image import ImageInstance
@@ -167,8 +168,12 @@ class LabelDistribution(
                 if "type" in obj.metadata:
                     self.add_label(obj.metadata["type"])
         elif isinstance(element, ImageSegmentationInstance):
-            for label in element.annotations.labels:
-                self.add_label(label)
+            unique = np.unique(element.annotations.indices)
+            for index in unique:
+                # skip background
+                if index == 0:
+                    continue
+                self.add_label(element.annotations.labels[index - 1])
 
     def finish(self):
         self.init_labels()
