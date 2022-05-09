@@ -55,24 +55,3 @@ optional arguments:
                         the format to use for the output, available modes: csv, json
   -p, --percentages     whether to output percentages instead of counts.
 ```
-
-### TO-ANNOTATION-OVERLAY-OD
-Generates an image with all the annotation shapes (bbox or polygon) overlayed.
-
-#### Domain(s):
-- **Image Object-Detection Domain**
-
-#### Options:
-```
-usage: to-annotation-overlay-od [-b BACKGROUND_COLOR] [-c COLOR] [-o OUTPUT_FILE] [-s SCALE_TO]
-
-optional arguments:
-  -b BACKGROUND_COLOR, --background-color BACKGROUND_COLOR
-                        the color to use for the background as RGBA byte-quadruplet, e.g.: 255,255,255,255
-  -c COLOR, --color COLOR
-                        the color to use for drawing the shapes as RGBA byte-quadruplet, e.g.: 255,0,0,64
-  -o OUTPUT_FILE, --output OUTPUT_FILE
-                        the PNG image to write the generated overlay to
-  -s SCALE_TO, --scale-to SCALE_TO
-                        the dimensions to scale all images to before overlaying them (format: width,height)
-```
