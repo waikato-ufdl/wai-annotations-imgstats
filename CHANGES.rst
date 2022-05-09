@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.0.2 (????-??-??)
+1.0.2 (2022-05-09)
 ------------------
 
 - moved `to-annotation-overlay-od` into `wai.annotations.imgvis` module
-- ...
 
 
 1.0.1 (2022-05-04)
