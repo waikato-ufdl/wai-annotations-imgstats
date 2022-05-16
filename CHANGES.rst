@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 - `label-dist-od` now has `--label-key` option to specify the meta-data key that stores the label
+- added `area-histogram-is` and `area-histogram-od`
 - ...
 
 

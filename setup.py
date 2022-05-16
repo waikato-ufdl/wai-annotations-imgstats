@@ -38,10 +38,13 @@ setup(
     author_email='fracpete@waikato.ac.nz',
     install_requires=[
         "wai.annotations.core>=0.1.1",
+        "termplotlib",
     ],
     entry_points={
         "wai.annotations.plugins": [
             # sinks
+            "area-histogram-is=wai.annotations.imgstats.format.areahistogram.specifier:AreaHistogramISOutputFormatSpecifier",
+            "area-histogram-od=wai.annotations.imgstats.format.areahistogram.specifier:AreaHistogramODOutputFormatSpecifier",
             "label-dist-ic=wai.annotations.imgstats.format.labeldist.specifier:LabelDistributionICOutputFormatSpecifier",
             "label-dist-is=wai.annotations.imgstats.format.labeldist.specifier:LabelDistributionISOutputFormatSpecifier",
             "label-dist-od=wai.annotations.imgstats.format.labeldist.specifier:LabelDistributionODOutputFormatSpecifier",
