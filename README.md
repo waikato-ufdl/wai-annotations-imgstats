@@ -46,9 +46,11 @@ Generates a label distribution.
 
 #### Options:
 ```
-usage: label-dist-od [-o OUTPUT_FILE] [-f OUTPUT_FORMAT] [-p]
+usage: label-dist-od [--label-key LABEL_KEY] [-o OUTPUT_FILE] [-f OUTPUT_FORMAT] [-p]
 
 optional arguments:
+  --label-key LABEL_KEY
+                        the key in the meta-data that contains the label.
   -o OUTPUT_FILE, --output OUTPUT_FILE
                         the file to write the statistics to; uses stdout if omitted
   -f OUTPUT_FORMAT, --format OUTPUT_FORMAT

@@ -4,6 +4,7 @@ Changelog
 1.0.3 (????-??-??)
 ------------------
 
+- `label-dist-od` now has `--label-key` option to specify the meta-data key that stores the label
 - ...
 
 

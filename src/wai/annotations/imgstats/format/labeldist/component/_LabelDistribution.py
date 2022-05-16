@@ -24,6 +24,14 @@ OUTPUT_FORMATS = [
 class LabelDistribution(
     SinkComponent[ImageInstance]
 ):
+
+    label_key: str = TypedOption(
+        "--label-key",
+        type=str,
+        default="type",
+        help="the key in the meta-data that contains the label."
+    )
+
     output_format: str = TypedOption(
         "-f", "--format",
         type=str,
@@ -165,8 +173,8 @@ class LabelDistribution(
             self.add_label(element.annotations.label)
         elif isinstance(element, ImageObjectDetectionInstance):
             for obj in element.annotations:
-                if "type" in obj.metadata:
-                    self.add_label(obj.metadata["type"])
+                if self.label_key in obj.metadata:
+                    self.add_label(obj.metadata[self.label_key])
         elif isinstance(element, ImageSegmentationInstance):
             unique = np.unique(element.annotations.indices)
             for index in unique:
