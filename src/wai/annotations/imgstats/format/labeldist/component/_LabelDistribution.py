@@ -142,7 +142,7 @@ class LabelDistribution(
         Outputs the distribution.
         """
         keys = list(self._labels.keys())
-        sorted(keys)
+        keys.sort()
         dist = OrderedDict()
         for k in keys:
             dist[k] = self._labels[k]
