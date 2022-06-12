@@ -1,13 +1,12 @@
 Changelog
 =========
 
-1.0.3 (????-??-??)
+1.0.3 (2022-06-13)
 ------------------
 
 - `label-dist-od` now has `--label-key` option to specify the meta-data key that stores the label
 - `label-dist-XY` now sort the labels in alphabetically order before outputting the statistics
 - added `area-histogram-is` and `area-histogram-od`
-- ...
 
 
 1.0.2 (2022-05-09)
